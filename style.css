@@ -14,7 +14,7 @@ body {
 nav {
     background: rgba(209, 36, 59, 0.747);
    margin: 0 auto;
-   margin-bottom: 20px
+   margin-bottom: 20px;
     display: flex;
     padding: 0 10px;
 }
