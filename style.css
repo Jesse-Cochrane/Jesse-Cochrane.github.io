@@ -90,7 +90,7 @@ main {
 }
 
 #portfolio li:hover {
-    background: #f516d0;
+    background: rgb(200, 10, 150);
 }
 
 #portfolio a {
