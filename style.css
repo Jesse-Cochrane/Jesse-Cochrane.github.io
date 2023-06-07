@@ -1,8 +1,9 @@
 body {
-    background: rgba(72, 8, 109, 0.856);
-    color: rgb(45, 45, 45);
+    background: rgba(124, 27, 180, 0.856);
+    color: rgb(231, 29, 29);
     padding: 10px;
     font-family: arial;
+    border-top-right-radius: 20px;
 }
 #all-contents {
   max-width: 800px;
@@ -15,7 +16,7 @@ nav {
    margin: 0 auto;
    margin-bottom: 20px
     display: flex;
-    padding: 10px;
+    padding: 0 10px;
 }
 h1 {
     display: flex;
@@ -40,6 +41,10 @@ a {
 main {
     background: rgb(104, 9, 192);
     display: flex;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 20px;
 }
 
 
@@ -49,7 +54,11 @@ main {
 }
 .sidebar-img {
     width: 300px;
-    border: ridge 10px yellow 
+    border: ridge 10px yellow;
+    border-bottom-right-radius: 20px ;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     }
 
     .content {
@@ -59,18 +68,20 @@ main {
 
 /* portfolio styles */
 #interests {
-    border: 4px rgb(44, 7, 255) ridge;
-    padding: 8px;
+    border: 4px rgb(7, 114, 255) ridge;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-width: 4px;
 }
 h2, h3 {
     margin: 0px;
 }
 li{color:rgb(230, 138, 7)}
-li{font-size: larger;}
+li{font-size: 25px ;}
 
 h2{color: rgb(230, 138, 7)}
 
 h3{color: rgb(230, 138, 7)}
 
 p{ color: rgb(230, 138, 7)}
-p{ font-size: larger;}
+p{ font-size: 19px;}
