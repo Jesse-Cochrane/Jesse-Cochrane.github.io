@@ -49,17 +49,17 @@ $(function () {
     // example usage: createPlatform(x,y,width,height)
 //starter
 createPlatform(0,150,150,10)
-//
+//start jump 
 createPlatform(250,230,50, 10 )
 //
 createPlatform(400,300, 50, 100)
-//
+//wall 
 createPlatform(225,400,225, 10 )
-//
+// jump off 
 createPlatform()
 //
 createPlatform(500,310,20, 100)
-//
+//2 wall 
 createPlatform(50, 675, 50, 10)
 //
 createPlatform (375,675, 50, 10)
