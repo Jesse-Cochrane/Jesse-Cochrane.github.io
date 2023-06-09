@@ -105,9 +105,9 @@ createCannon("bottom", 120, 1000);
 createCannon("right",350,1200)
 createCannon("top",65,12)
 createCannon("top",1000,1200)
-createCannon("top",1460,20)
+createCannon("top",1450,20)
 createCannon("top",790,1200)
-createCannon("bottom",450,1200)
+createCannon("bottom",460,1200)
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE ABOVE THIS POINT///////////
