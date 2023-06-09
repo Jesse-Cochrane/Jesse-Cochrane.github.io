@@ -51,18 +51,34 @@ $(function () {
 createPlatform(0,150,150,10)
 //start jump 
 createPlatform(250,230,50, 10 )
-//
+//first wall 
 createPlatform(400,300, 50, 100)
-//wall 
-createPlatform(225,400,225, 10 )
 // jump off 
-createPlatform()
-//
-createPlatform(500,310,20, 100)
-//2 wall 
+createPlatform(225,400,225, 10 )
+// dl collect PF 
+createPlatform(450,410,50,10)
+//2nd wall 
+createPlatform(500,275,20, 145)
+//roof 
+createPlatform(500,275,700,10)
+//first low  
 createPlatform(50, 675, 50, 10)
-//
+//2nd low 
 createPlatform (375,675, 50, 10)
+// 3rd low
+createPlatform(600,575,50,10)
+//4th low 
+createPlatform(850,600,50,10)
+//5th low 
+createPlatform(1100,500,20,10)
+//step down 
+createPlatform(1300,675,100,10)
+//last level 
+createPlatform(1200,600,10,10)
+//step up 
+createPlatform(1275,400,60,10)
+//
+createPlatform(1300,150,30,10)
     
     // TODO 2
     // Create collectables
@@ -70,6 +86,11 @@ createPlatform (375,675, 50, 10)
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
 
+createCollectable("database",450,370,)
+createCollectable("database",375,635,0,0)
+createCollectable("database",1325,635,0,0)
+createCollectable("database",1295,110,0,0)
+createCollectable("database",550,350,0,0)
 
 
 
@@ -81,6 +102,12 @@ createPlatform (375,675, 50, 10)
 
 createCannon("right", 800,50); // cannon on right wall, 600px down, shooting twice per second)
 createCannon("bottom", 120, 1000);
+createCannon("right",350,1200)
+createCannon("top",65,12)
+createCannon("top",1000,1200)
+createCannon("top",1460,20)
+createCannon("top",790,1200)
+createCannon("bottom",450,1200)
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE ABOVE THIS POINT///////////
