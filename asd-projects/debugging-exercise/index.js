@@ -89,7 +89,7 @@ function update(){
     // loop over the circles array. We use the maxCircles variable instead of circles.length
     // to make seeing issues in the debugger slightly easier (in practice, you should use
     // circles.length, but do NOT change it here)
-    for (var i = 0; i < maxCircles; i++){
+    for (var i = 10; i < maxCircles; i++){
         var circle = circles[i];
 
         // move the circle
@@ -109,7 +109,7 @@ function update(){
 
 // this moves circles in memory but doesn't update them on the screen
 function moveCircle(circle){
-    circle.x = circle.speedX;
+    circle.x += circle.speedX;
     circle.y += circle.speedY;
 }
 
