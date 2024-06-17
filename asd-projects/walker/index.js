@@ -19,8 +19,8 @@ function runProgram(){
   var walker = {
      speedX : 0,
      speedY : 0,
-     positionX : 0,
-     positionY : 0
+     locationX : 0,
+     locationY : 0
   }
   // Game Item Objects
 
@@ -39,7 +39,7 @@ function runProgram(){
   by calling this function and executing the code inside.
   */
   function newFrame() {
-    repostitionGameItem();
+    repositionGameItem();
     wallCollision();
     redrawGameItem();
   }
@@ -93,7 +93,7 @@ walker.locationX += walker.speedX;
 walker.locationY += walker.speedY;
   }
 function redrawGameItem () {
-$("#walker").css("left", walker.locationx)
+$("#walker").css("left", walker.locationX)
  $("#walker").css("top", walker.locationY)
  
 }
