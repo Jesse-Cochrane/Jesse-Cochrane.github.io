@@ -99,11 +99,11 @@ $("#walker").css("left", walker.locationX)
 }
 
   function wallCollision () {
-    if (walker.locationX > 250){
+    if (walker.locationX > 360){
       walker.speedX = walker.speedX - walker.speedX
-      walker.locationX = 250; 
+      walker.locationX = 360; 
     }
-    else if (walker.locationY > 250) {
+    else if (walker.locationY > 360) {
       walker.speedY = walker.speedY - walker.speedY;
       walker.locationY = 250; 
     }
