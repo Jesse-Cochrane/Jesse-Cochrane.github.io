@@ -39,7 +39,7 @@ function runProgram(){
   by calling this function and executing the code inside.
   */
   function newFrame() {
-    repostionGameItem();
+    repostitionGameItem();
     wallCollision();
     redrawGameItem();
   }
@@ -88,7 +88,7 @@ console.log()
   ////////////////////////////////////////////////////////////////////////////////
   ////////////////////////// HELPER FUNCTIONS ////////////////////////////////////
   ////////////////////////////////////////////////////////////////////////////////
-  function repositionBox() {
+  function repositionGameItem() {
 walker.locationX += walker.speedX;
 walker.locationY += walker.speedY;
   }
