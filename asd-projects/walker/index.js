@@ -49,15 +49,15 @@ function runProgram(){
   */
   function handleKeyDown(event) {
     if (event.which === KEY.LEFT){
-      walker.speedX = -5
+      walker.speedX = - 5
       console.log("left pressed");
     }
     else if (event.which === KEY.RIGHT){
-      walker.speedX = -5 
+      walker.speedX = 5 
       console.log("right pressed")
     }
     else if (event.which === KEY.UP){
-      walker.speedY = 5
+      walker.speedY = - 5
       console.log("enter up")
     }
     else if (event.which === KEY.DOWN){
