@@ -53,11 +53,11 @@ function runProgram(){
       console.log("left pressed");
     }
     else if (event.which === KEY.RIGHT){
-      walker.speedY = -5 
+      walker.speedX = -5 
       console.log("right pressed")
     }
     else if (event.which === KEY.UP){
-      walker.speedX = 5
+      walker.speedY = 5
       console.log("enter up")
     }
     else if (event.which === KEY.DOWN){
