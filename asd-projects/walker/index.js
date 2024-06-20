@@ -103,13 +103,13 @@ $("#walker").css("left", walker.locationX)
       walker.speedX = walker.speedX - walker.speedX
       walker.locationX = 360; 
     }
-    else if (walker.locationY > 360) {
-      walker.speedY = walker.speedY - walker.speedY;
-      walker.locationY = 360; 
-    }
     else if (walker.locationX < 1){
     walker.speedX = walker.speedX - walker.speedX; 
     walker.locationY = 1;
+    }
+    else if (walker.locationY > 360) {
+      walker.speedY = walker.speedY - walker.speedY;
+      walker.locationY = 360;
     }
     else if (walker.locationY < 1){
       walker.speedY = walker.speedY - walker.speedY;
