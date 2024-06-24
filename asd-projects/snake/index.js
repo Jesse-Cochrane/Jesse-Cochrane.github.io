@@ -64,7 +64,6 @@ snake.head = snake.body[0];
  */
 function update() {
   // TODO 5b: Fill in the update function's code block
-  function update() {
     moveSnake();
     if (hasHitWall() || hasCollidedWithSnake()) {
       endGame();
@@ -72,7 +71,7 @@ function update() {
     if (hasCollidedWithApple()) {
       handleAppleCollision();
     }
-  }
+  
 }
 
 function checkForNewDirection(event) {
@@ -136,11 +135,9 @@ function moveSnake() {
   if (snake.head.direction === "left") {
     snake.head.column = snake.head.column - 1;
   }
-  repositionSquare(snake.head); 
   if (snake.head.direction === "up") {
     snake.head.row = snake.head.row - 1;
   }
-  repositionSquare(snake.head);
   if (snake.head.direction === "right") {
     snake.head.column = snake.head.column + 1; 
   }
@@ -333,8 +330,8 @@ function getRandomAvailablePosition() {
   while (!spaceIsAvailable) {
     randomPosition.column = Math.floor(Math.random() * COLUMNS);
     randomPosition.row = Math.floor(Math.random() * ROWS);
-    for(i = 0; i <snake.body.length; i++){
-      if ((randomPosition.column != snake.body[1].column) && (randomPosition.row != snake.body[i].row)){
+    for(i = 0; i < snake.body.length; i++){
+      if ((randomPosition.column != snake.body[i].column) && (randomPosition.row != snake.body[i].row)){
         spaceIsAvailable = true;
       }
       else {
