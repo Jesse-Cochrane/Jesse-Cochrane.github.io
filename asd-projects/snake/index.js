@@ -48,7 +48,7 @@ snake.body = [];
 makeSnakeSquare(10, 10);
 snake.head = snake.body[0];
   // TODO 4b-2: initialize the apple
-  makeApple
+  makeApple();
   // TODO 5a: Initialize the interval
  setInterval()
  updateInterval = setInterval(update, 100);
@@ -86,13 +86,13 @@ function checkForNewDirection(event) {
   if (activeKey === KEY.LEFT && snake.head.direction !== "right") {
     snake.head.direction = "left";
   }
-  else if (activeKey === KEY.LEFT && snake.head.direction !== "down") {
+  else if (activeKey === KEY.UP && snake.head.direction !== "down") {
     snake.head.direction = "up";
   }
-  else if (activeKey === KEY.LEFT && snake.head.direction !== "left") {
+  else if (activeKey === KEY.RIGHT && snake.head.direction !== "left") {
     snake.head.direction = "right";
   }
-  else if (activeKey === KEY.LEFT && snake.head.direction !== "up") {
+  else if (activeKey === KEY.DOWN && snake.head.direction !== "up") {
     snake.head.direction = "down";
   }
 
@@ -138,14 +138,14 @@ function moveSnake() {
   }
   repositionSquare(snake.head); 
   if (snake.head.direction === "up") {
-    snake.head.column = snake.head.column - 1;
+    snake.head.row = snake.head.row - 1;
   }
   repositionSquare(snake.head);
   if (snake.head.direction === "right") {
     snake.head.column = snake.head.column + 1; 
   }
   if (snake.head.direction === "down") {
-      snake.head.column = snake.head.column + 1;
+      snake.head.row = snake.head.row + 1;
     }
     repositionSquare(snake.head);
 }
