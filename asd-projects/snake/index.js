@@ -50,7 +50,6 @@ snake.head = snake.body[0];
   // TODO 4b-2: initialize the apple
   makeApple();
   // TODO 5a: Initialize the interval
- setInterval()
  updateInterval = setInterval(update, 100);
 }
 
