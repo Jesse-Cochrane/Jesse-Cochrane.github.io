@@ -35,7 +35,11 @@ applyFilter()
 function applyFilter (){
   for( var i = 0; i < image.length; i++){
     for(var j = 0; j < image[i].length; j++){
-      image[i][j] = image;
+      rgbString[i][j] = image;
+      var rgbNumbers = rgbStringToArray(rgbString);
+      rgbNumbers[RED] = 255;
+      rgbString = rgbArrayToString(rgbNumbers);
+      image [i][j] = rgbString;
     }
   }
 }
