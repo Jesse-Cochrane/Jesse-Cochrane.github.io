@@ -85,6 +85,6 @@ function decreaseBlue (wind){
 }
 
 function increaseGreenByBlue (air){
-  air[GREEN] = keepInBounds (air[GREEN] + wind[BLUE])
+  air[GREEN] = keepInBounds (air[GREEN] + air[BLUE])
 }
 // CHALLENGE code goes below here
