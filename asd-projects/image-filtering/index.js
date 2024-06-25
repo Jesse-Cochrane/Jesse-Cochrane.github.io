@@ -45,12 +45,17 @@ function applyFilter (filterFunction){
 }
 
 // TODO 7: Create the applyFilterNoBackground function
+function applyFilterNoBackground (){
 
+}
 
 // TODO 5: Create the keepInBounds function
-function keepInBounds (){
-  
+function keepInBounds (number){
+  number 
 }
+console.log(keepInBounds(-30)); // should print 0
+console.log(keepInBounds(300)); // should print 255
+console.log(keepInBounds(127)); // should print 127
 
 // TODO 3: Create reddify function
 function reddify(colorArray ){
@@ -58,6 +63,11 @@ function reddify(colorArray ){
 }
 
 // TODO 6: Create more filter functions
+function decreaseBlue (){
+  
+}
 
+function increaseGreenByBlue (){
 
+}
 // CHALLENGE code goes below here
