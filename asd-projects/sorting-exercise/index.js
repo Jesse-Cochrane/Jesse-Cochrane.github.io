@@ -14,15 +14,29 @@ The CSS ids you will work with are:
 ///////////////////////////////////////////////////////////////////////
 
 // TODO 2: Implement bubbleSort
+async function bubbleSort (array){
 
+}
 
 // TODO 3: Implement quickSort
+function quicksort(array, left, right ){
 
+}
 
 // TODOs 4 & 5: Implement partition
+function partition (array, left, right){
 
+}
 
 // TODO 1: Implement swap
+function swap (array, i, j){
+ var move = array[i]
+array[i] = array[j];
+array[j] = move;
+ }
+ 
+
+    drawSwap(array, i, j)
 
 
 ///////////////////////////////////////////////////////////////////////
