@@ -205,7 +205,7 @@ function handleAppleCollision() {
     column = snake.tail.column -= 1;
   }
   else if (snake.tail.direction === "down"){
-    column = snake.tail.row -= 1;
+    row = snake.tail.row -= 1;
   }
   var row = snake.tail.row;
   var column = snake.tail.column;
