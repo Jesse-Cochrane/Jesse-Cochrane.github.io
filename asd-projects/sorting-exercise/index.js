@@ -27,14 +27,14 @@ for(var i = 0; i <= array.length; i++){
 }
 
 // TODO 3: Implement quickSort
-async function quicksort(array, left, right ){
+async function quickSort(array, left, right ){
     if (( right - left) > 0){
         var index = await partition(array, left, right)
         if (left < (index - 1)){
-            await quicksort(array, left, index - 1)
+            await quickSort(array, left, index - 1)
         }
         if (index < right){
-            await quicksort(array, index, right)
+            await quickSort(array, index, right)
         }
     }
 } 
